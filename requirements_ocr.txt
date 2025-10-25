@@ -1,0 +1,4 @@
+mss
+Pillow
+pywin32;
+rapidocr-onnxruntime

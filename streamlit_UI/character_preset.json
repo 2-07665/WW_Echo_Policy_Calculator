@@ -1,0 +1,44 @@
+{
+  "卡提希娅": {
+    "Crit_Rate": 122,
+    "Crit_Damage": 100,
+    "HP": 52,
+    "HP_Flat": 18,
+    "Basic_Attack_Damage": 40,
+    "Skill_Damage": 7,
+    "Ult_Damage": 30
+  },
+  "奥古斯塔": {
+    "Crit_Rate": 100,
+    "Crit_Damage": 100,
+    "Attack": 70,
+    "Attack_Flat": 32,
+    "ER": 25,
+    "Heavy_Attack_Damage": 75,
+    "Skill_Damage": 15
+  },
+  "尤诺": {
+    "Crit_Rate": 100,
+    "Crit_Damage": 100,
+    "Attack": 75,
+    "Attack_Flat": 41,
+    "ER": 25,
+    "Skill_Damage": 14,
+    "Ult_Damage": 55
+  },
+  "示例": {
+    "Crit_Rate": 100,
+    "Crit_Damage": 100,
+    "Attack": 100,
+    "Attack_Flat": 100,
+    "Defence": 100,
+    "Defence_Flat": 100,
+    "HP": 100,
+    "HP_Flat": 100,
+    "ER": 100,
+    "Basic_Attack_Damage": 100,
+    "Heavy_Attack_Damage": 100,
+    "Skill_Damage": 100,
+    "Ult_Damage": 100
+  }
+}

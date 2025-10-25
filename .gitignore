@@ -1,0 +1,36 @@
+# macOS clutter
+.DS_Store
+
+# Python artefacts
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+*.eggs/
+.pyinstaller/
+.pytest_cache/
+.mypy_cache/
+.coverage
+.env
+.env.*
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node / Electron
+electron_UI/node_modules/
+electron_UI/dist/
+electron_UI/out/
+electron_UI/python-runtime/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Streamlit cache
+.streamlit/
+
+# Editors
+.idea/
+.vscode/

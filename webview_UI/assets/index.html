@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>声骸强化策略计算器</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1 class="page-title">声骸强化策略计算器</h1>
+
+      <section class="card" id="weights-card">
+        <div class="card-title">权重设置</div>
+        <div class="field-group">
+          <label for="preset-select">角色预设</label>
+          <select id="preset-select" class="styled-select"></select>
+        </div>
+        <div id="weight-inputs" class="weight-grid"></div>
+      </section>
+
+      <hr class="divider" />
+
+      <section class="card" id="buff-slots-card">
+        <div class="card-title row">
+          <span>当前词条</span>
+          <button type="button" id="clear-buffs" class="secondary-button">清空当前词条</button>
+        </div>
+        <div id="buff-slots"></div>
+      </section>
+
+      <section class="card" id="score-card"></section>
+
+      <section class="card" id="policy-config-card">
+        <div class="card-title">策略参数</div>
+
+        <div class="field-group">
+          <label for="target-score-input">目标分数</label>
+          <input id="target-score-input" type="number" step="0.1" min="0.1" max="100" />
+        </div>
+
+        <div class="field-group counts-toggle">
+          <label class="counts-toggle-label">
+            <input id="include-user-counts" type="checkbox" />
+            <span>在计算中包含自定义统计数据</span>
+          </label>
+          <p id="user-counts-hint" class="hint-text"></p>
+        </div>
+
+        <div class="field-group triple">
+          <div>
+            <label for="cost-w-echo">胚子权重</label>
+            <input id="cost-w-echo" type="number" step="0.1" />
+          </div>
+          <div>
+            <label for="cost-w-dkq">调谐器权重</label>
+            <input id="cost-w-dkq" type="number" step="0.1" />
+          </div>
+          <div>
+            <label for="cost-w-exp">金密音筒权重</label>
+            <input id="cost-w-exp" type="number" step="0.1" />
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="exp-refund-slider">强化失败经验返还比例 (理想值 0.75)</label>
+          <div class="slider-row">
+            <input id="exp-refund-slider" type="range" min="0.5" max="0.75" step="0.01" />
+            <span id="exp-refund-value"></span>
+          </div>
+        </div>
+
+        <div class="field-group double">
+          <div>
+            <label for="simulation-runs-input">蒙特卡洛模拟次数 (0 = 跳过)</label>
+            <input id="simulation-runs-input" type="number" min="0" max="5000000" step="1000" />
+          </div>
+          <div>
+            <label for="simulation-seed-input">随机数种子</label>
+            <input id="simulation-seed-input" type="number" min="0" step="1" />
+          </div>
+        </div>
+
+        <button type="button" id="compute-button" class="primary-button">开始计算策略</button>
+      </section>
+
+      <section id="results-section"></section>
+    </div>
+
+    <script src="bridge.js"></script>
+    <script src="renderer.js"></script>
+  </body>
+</html>

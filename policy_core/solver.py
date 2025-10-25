@@ -270,7 +270,7 @@ class PolicySolver:
         self,
         lo: float = 0.0,
         hi: float = 1.0,
-        tol: float = 1e-7,
+        tol: float = 1e-9,
         max_iter: int = 100,
     ) -> float:
         """Binary search λ such that V(Ø, 0) crosses zero."""

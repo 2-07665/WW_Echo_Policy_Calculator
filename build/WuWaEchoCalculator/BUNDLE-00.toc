@@ -1,0 +1,3 @@
+([('WuWaEchoCalculator',
+   '/Users/kanglecai/Desktop/Echo/dist/WuWaEchoCalculator',
+   'EXECUTABLE')],)

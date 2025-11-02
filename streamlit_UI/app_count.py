@@ -170,13 +170,12 @@ def render_buff_row(
 def main() -> None:
     """Render the Streamlit application."""
 
-    st.set_page_config(page_title="Buff Count Recorder", layout="wide")
+    st.set_page_config(page_title="词条数值统计工具", layout="wide")
     st.markdown(LAYOUT_STYLES, unsafe_allow_html=True)
-    st.title("Buff Type Count Recorder")
+    st.title("词条数值统计工具")
     st.caption(
-        "Click a stat button to record another observation. Totals combine the built-in data "
-        "and your additions, which are stored in "
-        f"`{get_relative_counts_path()}`."
+        "单击数值按钮以增加一次记录。数据存储于"
+        f"`{get_relative_counts_path()}`，可直接被UI作为自定义统计数据使用。"
     )
 
     counts_available = COUNTS_FILE.exists()

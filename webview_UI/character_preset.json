@@ -1,14 +1,5 @@
 {
-  "卡提希娅": {
-    "Crit_Rate": 122,
-    "Crit_Damage": 100,
-    "HP": 52,
-    "HP_Flat": 18,
-    "Basic_Attack_Damage": 40,
-    "Skill_Damage": 7,
-    "Ult_Damage": 30
-  },
-  "奥古斯塔": {
+  "示例1": {
     "Crit_Rate": 100,
     "Crit_Damage": 100,
     "Attack": 70,
@@ -17,16 +8,16 @@
     "Heavy_Attack_Damage": 75,
     "Skill_Damage": 15
   },
-  "尤诺": {
-    "Crit_Rate": 100,
+  "示例2": {
+    "Crit_Rate": 122,
     "Crit_Damage": 100,
-    "Attack": 75,
-    "Attack_Flat": 41,
-    "ER": 25,
-    "Skill_Damage": 14,
-    "Ult_Damage": 55
+    "HP": 52,
+    "HP_Flat": 18,
+    "Basic_Attack_Damage": 40,
+    "Skill_Damage": 7,
+    "Ult_Damage": 30
   },
-  "示例": {
+  "模板": {
     "Crit_Rate": 100,
     "Crit_Damage": 100,
     "Attack": 100,

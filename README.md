@@ -62,3 +62,6 @@ python scripts/build_webview.py
 
 ## OCR（实验性）
 自动截取升级界面并识别副词条。当前前端未内置完整 OCR 操作面板；如需编程控制，可参考 `test/ocr_test`。
+
+## 词条统计数据
+- Bilibili [@IceHe何瀚清](https://space.bilibili.com/13378662)

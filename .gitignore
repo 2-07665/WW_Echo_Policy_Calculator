@@ -34,3 +34,7 @@ pnpm-debug.log*
 # Editors
 .idea/
 .vscode/
+
+build
+dist
+.spec
